@@ -42,6 +42,7 @@ Designed for Gold, Forex, and traders who believe consistency matters more than 
           <div className="hero__actions reveal" style={{ "--reveal-delay": "240ms" }}>
             <a href="#pricing" className="btn btn--gold">Get Started</a>
             <a href="#performance" className="btn btn--ghost">Strategy of AURUM</a>
+            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost">Book a call</a>
           </div>
         </div>
 

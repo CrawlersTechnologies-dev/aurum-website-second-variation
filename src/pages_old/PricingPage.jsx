@@ -73,9 +73,9 @@ export default function PricingPage() {
               <strong>Pay once. Own it forever.</strong>
               <span>All plans are lifetime licences  no subscriptions, ever.</span>
             </div>
-            <Link href="/contact" className="btn btn--gold">
+            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--gold">
               Talk to us first
-            </Link>
+            </a>
           </div>
         </div>
       </section>

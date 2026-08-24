@@ -29,10 +29,10 @@ export default function CTA() {
               Not sure which plan fits you? Have a question about your broker or account size?
               Talk to the team no sales pressure, just answers.
             </p>
-            <Link href="/contact" className="btn btn--outline cta-box__btn">
+            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--outline cta-box__btn">
               Talk To The Team
               <Icon name="link" size={16} strokeWidth={2.2} />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
