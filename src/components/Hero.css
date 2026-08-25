@@ -65,7 +65,7 @@
 }
 
 .hero__copy {
-  max-width: 560px;
+  max-width: 640px;
 }
 
 .hero__visual {
@@ -109,7 +109,12 @@ h1.hero__title.reveal.is-visible {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
+}
+
+.hero__actions .btn {
+  padding: 14px 20px;
+  font-size: 0.9rem;
 }
 
 .hero__trust {

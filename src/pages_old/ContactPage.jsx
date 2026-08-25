@@ -139,7 +139,7 @@ export default function ContactPage() {
           <h2>Let&apos;s connect before you decide.</h2>
           <p>No pressure, no sales script,just an honest conversation about whether AURUM is the right fit for your account.</p>
           <div className="cta-block__actions">
-            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost">Book a call</a>
+            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost">Schedule Demo</a>
             <MailLink className="btn btn--gold">Email the Team</MailLink>
             <Link href="/pricing" className="btn btn--ghost">View Plans</Link>
           </div>

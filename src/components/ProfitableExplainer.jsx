@@ -84,7 +84,7 @@ export default function ProfitableExplainer() {
             </MailLink>
             <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost profitable__cta">
               <Icon name="link" size={16} strokeWidth={2} />
-              Book a call Now
+              Schedule Demo
             </a>
             <a href="#pricing" className="btn btn--gold profitable__cta">
               Start Automating

@@ -95,7 +95,7 @@ export default function HowItWorks() {
           </div>
           <div className="how__email-field">
             <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
-              Book a call
+              Schedule Demo
             </a>
             <a href="/pricing" className="btn btn--gold">
               Start Automating →
