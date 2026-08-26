@@ -24,8 +24,8 @@ export default function ScheduleSuccessPage() {
         <div className="container" style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <div 
             className="calendly-inline-widget reveal" 
-            data-url="https://calendly.com/aurum-goldea-info/aurum-gold-ea" 
-            style={{ minWidth: '320px', height: '700px' }}
+            data-url="https://calendly.com/aurum-goldea-info/aurum-gold-ea?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=19d05f" 
+            style={{ minWidth: '320px', height: '800px', overflow: 'hidden' }}
           ></div>
         </div>
       </section>
