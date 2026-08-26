@@ -173,7 +173,7 @@ export default function AboutPage() {
           <h2>Meet the strategy behind the story.</h2>
           <p>See exactly how AURUM trades, what it protects against, and how to get it running on your account.</p>
           <div className="cta-block__actions">
-            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost">Schedule Demo</a>
+            <a href="/schedule" className="btn btn--ghost">Schedule Demo</a>
             <Link href="/pricing#pricing" className="btn btn--gold">Get AURUM Now</Link>
             <Link href="/results" className="btn btn--ghost">See the Results</Link>
           </div>

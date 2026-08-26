@@ -94,7 +94,7 @@ export default function HowItWorks() {
             <span>{onboardingEmailCta.body}</span>
           </div>
           <div className="how__email-field">
-            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost">
+            <a href="/schedule" className="btn btn--ghost">
               Schedule Demo
             </a>
             <a href="/pricing" className="btn btn--gold">

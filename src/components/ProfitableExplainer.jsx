@@ -78,11 +78,11 @@ export default function ProfitableExplainer() {
           <p className="profitable__close-body">{profitableClosing.body}</p>
           <p className="profitable__close-cta">{profitableClosing.cta}</p>
           <div className="profitable__ctas">
-            <MailLink className="btn btn--ghost profitable__cta">
+            {/* <MailLink className="btn btn--ghost profitable__cta">
               <Icon name="help" size={16} strokeWidth={2} />
               Get in touch with us
-            </MailLink>
-            <a href="https://calendly.com/aurum-goldea-info/aurum-gold-ea" target="_blank" rel="noopener noreferrer" className="btn btn--ghost profitable__cta">
+            </MailLink> */}
+            <a href="/schedule" className="btn btn--ghost profitable__cta">
               <Icon name="link" size={16} strokeWidth={2} />
               Schedule Demo
             </a>
