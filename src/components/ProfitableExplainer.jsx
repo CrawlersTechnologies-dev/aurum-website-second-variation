@@ -37,6 +37,7 @@ export default function ProfitableExplainer() {
                   controls
                   autoPlay
                   playsInline
+                  loop
                 >
                   Sorry, your browser doesn&apos;t support embedded videos.
                 </video>

@@ -199,8 +199,8 @@ export const humanVsAurum = [
 // (an .mp4 is the safest cross-browser format). `poster` is the thumbnail
 // shown before playback — optional, drop an image into client/public/images/.
 export const tutorialVideo = {
-  src: "https://drive.google.com/file/d/1qtHSyJK4gtkbZw-3xlsM8NmcecM8xW_D/preview",
-  isIframe: true,
+  src: "https://rc76f8rhnosfcnjb.public.blob.vercel-storage.com/Aurum%20Website%20Video.mp4",
+  isIframe: false,
   poster: "",
   label: "2 Min Watch",
   title: "See AURUM in action"
