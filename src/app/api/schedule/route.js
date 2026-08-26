@@ -36,44 +36,58 @@ export async function POST(request) {
   <meta charset="UTF-8" />
   <title>New Demo Request</title>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #050814; margin: 0; padding: 20px;">
-  <div style="max-width: 600px; margin: 0 auto; background-color: #0a0f24; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-    <div style="background-color: #070a1a; padding: 30px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);">
-      <a href="${appUrl}" style="text-decoration: none; display: inline-block;">
-        <img src="${appUrl}/images/logo-navbar.png" alt="AURUM EA Logo" style="height: 45px; display: block; margin: 0 auto 10px;" />
-        <div style="font-size: 24px; font-weight: bold; color: #ffffff; letter-spacing: 1px;">
-          AURUM<span style="color: #19d05f; font-weight: normal; font-size: 14px; letter-spacing: 2px; margin-left: 4px;">GOLD</span>
-        </div>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f6f8; margin: 0; padding: 40px 20px;">
+  <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #e5e7eb;">
+    
+    <!-- Header -->
+    <div style="background-color: #ffffff; padding: 24px 32px; border-bottom: 1px solid #f3f4f6;">
+      <a href="${appUrl}" style="text-decoration: none; color: #111827; display: block;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding-right: 12px; vertical-align: middle;">
+              <img src="${appUrl}/images/logo-navbar.png" alt="AURUM EA Logo" style="height: 36px; display: block;" />
+            </td>
+            <td style="vertical-align: middle;">
+              <div style="font-size: 22px; font-weight: 800; letter-spacing: 0.5px;">
+                AURUM<span style="color: #19d05f; font-weight: 600; font-size: 14px; letter-spacing: 1px; margin-left: 4px;">GOLD</span>
+              </div>
+            </td>
+          </tr>
+        </table>
       </a>
     </div>
-    <div style="padding: 30px; color: #d1d5db; line-height: 1.6;">
-      <h2 style="color: #ffffff; margin-top: 0;">New Demo Request</h2>
-      <p>You have received a new demo request from <strong>${name}</strong>.</p>
+
+    <!-- Body -->
+    <div style="padding: 32px;">
+      <h2 style="color: #111827; margin-top: 0; font-size: 20px;">New Demo Request</h2>
+      <p style="color: #4b5563; font-size: 15px; margin-bottom: 24px;">You have received a new demo request from <strong>${name}</strong>.</p>
       
-      <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
         <tr>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #9ca3af; width: 120px;">Name</td>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #ffffff; font-weight: bold;">${name}</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280; width: 140px;">Name</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;">${name}</td>
         </tr>
         <tr>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #9ca3af;">Email</td>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #ffffff; font-weight: bold;"><a href="mailto:${email}" style="color: #19d05f; text-decoration: none;">${email}</a></td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Email</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;"><a href="mailto:${email}" style="color: #19d05f; text-decoration: none;">${email}</a></td>
         </tr>
         <tr>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #9ca3af;">Phone</td>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #ffffff; font-weight: bold;">${phone}</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Phone</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;">${phone}</td>
         </tr>
         <tr>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #9ca3af;">Volume</td>
-          <td style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); color: #ffffff; font-weight: bold;">${volume || 'Not provided'}</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Trading Volume</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;">${volume || 'Not provided'}</td>
         </tr>
       </table>
       
-      <div style="margin-top: 30px; text-align: center;">
-        <a href="mailto:${email}" style="background-color: #19d05f; color: #0a1628; padding: 12px 24px; text-decoration: none; border-radius: 99px; font-weight: bold; display: inline-block;">Reply to Lead</a>
+      <div style="margin-top: 32px;">
+        <a href="mailto:${email}" style="background-color: #19d05f; color: #ffffff; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 15px; display: inline-block;">Reply to Lead</a>
       </div>
     </div>
-    <div style="background-color: #070a1a; padding: 20px; text-align: center; color: #6b7280; font-size: 12px; border-top: 1px solid rgba(255,255,255,0.1);">
+
+    <!-- Footer -->
+    <div style="background-color: #f9fafb; padding: 20px; text-align: center; color: #9ca3af; font-size: 13px; border-top: 1px solid #f3f4f6;">
       &copy; ${new Date().getFullYear()} AURUM EA &middot; aurum-goldea.com
     </div>
   </div>
