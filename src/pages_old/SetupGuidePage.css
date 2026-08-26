@@ -110,6 +110,13 @@
   aspect-ratio: 16 / 9;
 }
 
+@media (max-width: 768px) {
+  .setup-video-card {
+    aspect-ratio: auto;
+    height: 260px;
+  }
+}
+
 .setup-video-card__frame {
   position: absolute;
   top: 0;
