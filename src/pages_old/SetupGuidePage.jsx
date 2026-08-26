@@ -1,61 +1,20 @@
 "use client";
-import { useState, useRef } from 'react';
 import PageHero from "./PageHero";
 import Link from 'next/link';
 import Image from 'next/image';
 import "./shared-page.css";
 import "./SetupGuidePage.css";
 
-const SetupVideoDisplay = ({ label, src, poster, isIframe }) => {
-  const [playing, setPlaying] = useState(false);
-
-  const parts = label.split('(');
-  const mainText = parts[0].trim();
-  const bracketText = parts[1] ? `(${parts[1]}` : null;
-
+const SetupVideoDisplay = ({ src, poster }) => {
   return (
     <div className="setup-video-card">
-      {playing ? (
-        isIframe ? (
-          <iframe
-            className="setup-video-card__player"
-            src={`${src}?autoplay=1`}
-            allow="autoplay"
-            allowFullScreen
-            title="Setup Guide Video"
-            style={{ border: "none" }}
-          />
-        ) : (
-          <video
-            className="setup-video-card__player"
-            src={src || "/videos/aurum-installation-guide.mp4"}
-            poster={poster}
-            controls
-            autoPlay
-            playsInline
-          />
-        )
-      ) : (
-        <div className="setup-video-card__frame" onClick={() => setPlaying(true)}>
-          <div className="setup-video-card__grid" />
-          <button className="setup-video-card__play" aria-label="Play tutorial video">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-              <path d="M8 5.5v13l11-6.5-11-6.5z" fill="#1B2360" />
-            </svg>
-          </button>
-          <div className="setup-video-card__meta">
-            <span className="setup-video-card__label">
-              <span className="setup-video-card__label-main">{mainText}</span>
-              {bracketText && (
-                <>
-                  <span className="setup-video-card__label-space"> </span>
-                  <span className="setup-video-card__label-bracket">{bracketText}</span>
-                </>
-              )}
-            </span>
-          </div>
-        </div>
-      )}
+      <video
+        className="setup-video-card__player"
+        src={src}
+        poster={poster}
+        controls
+        playsInline
+      />
     </div>
   );
 };

@@ -1,0 +1,22 @@
+﻿"use client";
+import PageHero from "../components/PageHero";
+import "./shared-page.css";
+import "./SetupGuidePage.css";
+
+const SetupVideoDisplay = ({ src, poster }) => {
+  return (
+    <div className="setup-video-card">
+      <video
+        className="setup-video-card__player"
+        src={src}
+        poster={poster}
+        controls
+        playsInline
+      />
+    </div>
+  );
+};
+
+/* ---------------------------------------------------------------------- */
+/* Inline icon set (no external icon library in this project)             */
+/* ---------------------------------------------------------------------- */
