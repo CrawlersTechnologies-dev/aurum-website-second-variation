@@ -107,11 +107,15 @@
   background: linear-gradient(155deg, var(--navy-soft) 0%, var(--navy-deep) 100%);
   box-shadow: var(--shadow-lg);
   width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .setup-video-card__frame {
-  position: relative;
-  aspect-ratio: 16 / 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,8 +165,11 @@
 }
 
 .setup-video-card__player {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   object-fit: cover;
   display: block;
   background: #000;
