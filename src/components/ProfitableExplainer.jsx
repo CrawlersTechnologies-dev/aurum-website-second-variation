@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import Icon from "./Icon";
 import MailLink from "./MailLink";
 import { tutorialVideo, profitablePoints, profitableClosing } from "../data/content";
@@ -22,7 +22,6 @@ export default function ProfitableExplainer() {
               poster={tutorialVideo.poster}
               controls
               autoPlay
-              muted
               loop
               playsInline
             >
