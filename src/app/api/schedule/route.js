@@ -37,12 +37,12 @@ export async function POST(request) {
   <title>New Demo Request</title>
 </head>
 <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f6f8; margin: 0; padding: 40px 20px;">
-  <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #e5e7eb;">
+  <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #e5e7eb; text-align: center;">
     
     <!-- Header -->
     <div style="background-color: #ffffff; padding: 24px 32px; border-bottom: 1px solid #f3f4f6;">
-      <a href="${appUrl}" style="text-decoration: none; color: #111827; display: block;">
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+      <a href="${appUrl}" style="text-decoration: none; color: #111827; display: inline-block;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
           <tr>
             <td style="padding-right: 12px; vertical-align: middle;">
               <img src="${appUrl}/images/logo-navbar.png" alt="AURUM EA Logo" style="height: 36px; display: block;" />
@@ -62,7 +62,7 @@ export async function POST(request) {
       <h2 style="color: #111827; margin-top: 0; font-size: 20px;">New Demo Request</h2>
       <p style="color: #4b5563; font-size: 15px; margin-bottom: 24px;">You have received a new demo request from <strong>${name}</strong>.</p>
       
-      <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+      <table style="width: 100%; max-width: 400px; margin: 0 auto; border-collapse: collapse; font-size: 15px; text-align: left;">
         <tr>
           <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280; width: 140px;">Name</td>
           <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;">${name}</td>
