@@ -81,6 +81,11 @@ export async function POST(request) {
 
   switch (event.type) {
     case "checkout.session.completed":
+      const session = event.data.object;
+      if (session.metadata?.application !== "aurum_variation_2") {
+        console.log(`[Webhook] Ignored event ${event.id} - belongs to another application (${session.metadata?.application})`);
+        break;
+      }
       await handleCheckoutSessionCompleted(event);
       break;
 
