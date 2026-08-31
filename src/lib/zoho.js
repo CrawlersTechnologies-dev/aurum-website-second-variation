@@ -207,6 +207,7 @@ export async function createInvoice({
 
   const payload = {
     customer_id: contactId,
+    invoice_number: `AUMV2-${Date.now().toString(36).toUpperCase()}`,
     currency_code: currency,
     reference_number: stripePaymentIntentId || stripeSessionId,
     notes: `Stripe Session: ${stripeSessionId} | Payment Intent: ${stripePaymentIntentId || "N/A"} | Customer Email: ${customerEmail || "N/A"}`,
