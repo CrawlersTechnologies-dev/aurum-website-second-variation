@@ -18,14 +18,9 @@ export async function POST(request) {
       fullName,
       email,
       phone,
-      whatsapp,
-      companyName,
-      country,
       selectedPlan,
-      softwareRequirements,
-      technicalRequirements,
-      preferredDelivery,
-      additionalNotes,
+      platform,
+      accountNumber,
     } = body;
 
     // Required field validation
@@ -77,16 +72,11 @@ export async function POST(request) {
     const requirementData = {
       "Full Name": fullName,
       "Email": email,
-      "Phone": phone || "—",
-      "WhatsApp": whatsapp || "—",
-      "Company Name": companyName || "—",
-      "Country": country || "—",
-      "Selected Plan": selectedPlan || stripeSession?.metadata?.planName || "—",
+      "Phone": phone || "?",
+      "Package": selectedPlan || stripeSession?.metadata?.planName || "?",
+      "Platform": platform || "?",
+      "Account Number": accountNumber || "?",
       "Stripe Session ID": sessionId,
-      "Software Requirements": softwareRequirements || "—",
-      "Technical Requirements": technicalRequirements || "—",
-      "Preferred Delivery Method": preferredDelivery || "—",
-      "Additional Notes": additionalNotes || "—",
       "Submitted At": new Date().toISOString(),
     };
 

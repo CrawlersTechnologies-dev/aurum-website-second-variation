@@ -1,30 +1,9 @@
-"use client";
+﻿"use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import "./ThankYouPage.css";
-
-const countriesList = [
-  "United Arab Emirates", "Saudi Arabia", "Bahrain", "Kuwait", "Oman", "Qatar",
-  "United Kingdom", "United States", "Germany", "France", "Italy", "Spain",
-  "Australia", "Canada", "India", "Singapore", "Malaysia", "South Africa", "Other",
-];
-
-const deliveryOptions = [
-  "Email delivery",
-  "WhatsApp delivery",
-  "Both Email and WhatsApp",
-];
-
-function CheckIcon() {
-  return (
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <circle cx="12" cy="12" r="11" stroke="currentColor" strokeWidth="1.8" />
-      <path d="M7 12l3.5 3.5L17 8" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
 
 function ThankYouContent() {
   const searchParams = useSearchParams();
@@ -38,26 +17,21 @@ function ThankYouContent() {
     fullName: "",
     email: "",
     phone: "",
-    whatsapp: "",
-    companyName: "",
-    country: "",
     selectedPlan: "",
-    softwareRequirements: "",
-    technicalRequirements: "",
-    preferredDelivery: "",
-    additionalNotes: "",
+    platform: "",
+    accountNumber: "",
   });
 
-  function handleChange(e) {
-    setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
-  }
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  async function handleSubmit(e) {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
 
-    if (!form.fullName || !form.email) {
-      setError("Full Name and Email are required.");
+    if (!form.fullName || !form.email || !form.selectedPlan || !form.platform || !form.accountNumber) {
+      setError("Please fill in all required fields.");
       return;
     }
 
@@ -71,22 +45,25 @@ function ThankYouContent() {
       const data = await res.json();
       if (data.success) {
         setSubmitted(true);
-        window.scrollTo({ top: 0, behavior: "smooth" });
       } else {
-        setError(data.error || "Submission failed. Please try again.");
+        setError(data.error || "Failed to submit requirements. Please try again.");
       }
     } catch (err) {
-      setError("Network error. Please try again.");
+      console.error(err);
+      setError("An unexpected error occurred. Please try again.");
     } finally {
       setLoading(false);
     }
-  }
+  };
 
   if (submitted) {
     return (
-      <div className="ty-submitted">
+      <div className="ty-submitted reveal">
         <div className="ty-submitted__icon">
-          <CheckIcon />
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="11" stroke="currentColor" strokeWidth="1.8" />
+            <path d="M7 12l3.5 3.5L17 8" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </div>
         <h2>Requirements Submitted!</h2>
         <p>
@@ -100,19 +77,20 @@ function ThankYouContent() {
   }
 
   return (
-    <>
-      {/* Success Banner */}
-      <div className="ty-banner">
-        <div className="ty-banner__icon">
-          <CheckIcon />
+    <div className="ty-container reveal">
+      <div className="ty-header">
+        <div className="ty-header__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="11" stroke="currentColor" strokeWidth="1.8" />
+            <path d="M7 12l3.5 3.5L17 8" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
         </div>
-        <div className="ty-banner__text">
-          <h1>Thank you for your successful payment!</h1>
-          <p>Your payment has been successfully completed. Thank you for choosing us.</p>
+        <div className="ty-header__text">
+          <h1>Payment Successful</h1>
+          <p>Thank you for purchasing AURUM. Your payment has been processed securely.</p>
         </div>
       </div>
 
-      {/* Requirements Form Intro */}
       <div className="ty-form-intro">
         <p className="ty-form-intro__lead">
           Please complete the requirements form below so our team can better
@@ -130,10 +108,8 @@ function ThankYouContent() {
         </div>
       </div>
 
-      {/* Requirements Form */}
       <form className="ty-form" onSubmit={handleSubmit} noValidate>
         <div className="ty-form__section">
-          <h3 className="ty-form__section-title">Personal Information</h3>
           <div className="ty-form__row ty-form__row--2col">
             <label className="ty-form__label">
               Full Name <span className="ty-form__required">*</span>
@@ -160,9 +136,10 @@ function ThankYouContent() {
               />
             </label>
           </div>
+          
           <div className="ty-form__row ty-form__row--2col">
             <label className="ty-form__label">
-              Phone Number
+              Phone Number <span className="ty-form__required">*</span>
               <input
                 type="tel"
                 name="phone"
@@ -170,124 +147,54 @@ function ThankYouContent() {
                 value={form.phone}
                 onChange={handleChange}
                 placeholder="+1 234 567 8900"
+                required
               />
             </label>
             <label className="ty-form__label">
-              WhatsApp Number
-              <input
-                type="tel"
-                name="whatsapp"
-                className="ty-form__input"
-                value={form.whatsapp}
-                onChange={handleChange}
-                placeholder="+1 234 567 8900"
-              />
-            </label>
-          </div>
-          <div className="ty-form__row ty-form__row--2col">
-            <label className="ty-form__label">
-              Company Name
-              <input
-                type="text"
-                name="companyName"
-                className="ty-form__input"
-                value={form.companyName}
-                onChange={handleChange}
-                placeholder="Your company (optional)"
-              />
-            </label>
-            <label className="ty-form__label">
-              Country
-              <select
-                name="country"
-                className="ty-form__input ty-form__select"
-                value={form.country}
-                onChange={handleChange}
-              >
-                <option value="">Select your country…</option>
-                {countriesList.map((c) => (
-                  <option key={c} value={c}>{c}</option>
-                ))}
-              </select>
-            </label>
-          </div>
-        </div>
-
-        <div className="ty-form__section">
-          <h3 className="ty-form__section-title">Order Information</h3>
-          <div className="ty-form__row ty-form__row--2col">
-            <label className="ty-form__label">
-              Selected Plan
+              Package <span className="ty-form__required">*</span>
               <select
                 name="selectedPlan"
                 className="ty-form__input ty-form__select"
                 value={form.selectedPlan}
                 onChange={handleChange}
+                required
               >
-                <option value="">Select plan…</option>
-                <option value="Silver">Silver Plan</option>
-                <option value="Gold">Gold Plan</option>
-                <option value="Diamond">Diamond Plan</option>
-              </select>
-            </label>
-            <label className="ty-form__label">
-              Preferred Delivery Method
-              <select
-                name="preferredDelivery"
-                className="ty-form__input ty-form__select"
-                value={form.preferredDelivery}
-                onChange={handleChange}
-              >
-                <option value="">Select delivery method…</option>
-                {deliveryOptions.map((d) => (
-                  <option key={d} value={d}>{d}</option>
-                ))}
+                <option value="">Select package...</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Diamond">Diamond</option>
               </select>
             </label>
           </div>
-          {sessionId && (
-            <div className="ty-form__ref-note">
-              <span>Payment Reference:</span>
-              <code>{sessionId.slice(0, 32)}…</code>
-            </div>
-          )}
-        </div>
 
-        <div className="ty-form__section">
-          <h3 className="ty-form__section-title">Requirements</h3>
-          <label className="ty-form__label">
-            Software Requirements
-            <textarea
-              name="softwareRequirements"
-              className="ty-form__input ty-form__textarea"
-              rows={4}
-              value={form.softwareRequirements}
-              onChange={handleChange}
-              placeholder="Describe any specific software requirements, MT5 account details, broker preferences…"
-            />
-          </label>
-          <label className="ty-form__label">
-            Technical Requirements
-            <textarea
-              name="technicalRequirements"
-              className="ty-form__input ty-form__textarea"
-              rows={4}
-              value={form.technicalRequirements}
-              onChange={handleChange}
-              placeholder="Describe any technical requirements, risk settings, trading preferences…"
-            />
-          </label>
-          <label className="ty-form__label">
-            Additional Notes
-            <textarea
-              name="additionalNotes"
-              className="ty-form__input ty-form__textarea"
-              rows={3}
-              value={form.additionalNotes}
-              onChange={handleChange}
-              placeholder="Anything else you'd like us to know…"
-            />
-          </label>
+          <div className="ty-form__row ty-form__row--2col">
+            <label className="ty-form__label">
+              Platform <span className="ty-form__required">*</span>
+              <select
+                name="platform"
+                className="ty-form__input ty-form__select"
+                value={form.platform}
+                onChange={handleChange}
+                required
+              >
+                <option value="">Select platform...</option>
+                <option value="MT4">MT4</option>
+                <option value="MT5">MT5</option>
+              </select>
+            </label>
+            <label className="ty-form__label">
+              Account Number <span className="ty-form__required">*</span>
+              <input
+                type="text"
+                name="accountNumber"
+                className="ty-form__input"
+                value={form.accountNumber}
+                onChange={handleChange}
+                placeholder="e.g. 123456789"
+                required
+              />
+            </label>
+          </div>
         </div>
 
         {error && (
@@ -301,17 +208,21 @@ function ThankYouContent() {
           className="btn btn--gold ty-form__submit"
           disabled={loading}
         >
-          {loading ? "Submitting…" : "Submit My Requirements"}
+          {loading ? "Submitting..." : "Submit My Requirements"}
         </button>
       </form>
-    </>
+    </div>
   );
 }
 
 export default function ThankYouClient() {
   return (
-    <Suspense fallback={<div className="ty-loading">Loading…</div>}>
-      <ThankYouContent />
-    </Suspense>
+    <main className="section section--thankyou">
+      <div className="container">
+        <Suspense fallback={<div className="ty-loading">Loading...</div>}>
+          <ThankYouContent />
+        </Suspense>
+      </div>
+    </main>
   );
 }
