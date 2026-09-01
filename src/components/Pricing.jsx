@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { pricingTiers } from "../data/content";
 import Icon from "./Icon";
 import "./Pricing.css";
@@ -85,32 +86,8 @@ export default function Pricing({ compact = false, themeClass = "section--white"
   const [expandedPlans, setExpandedPlans] = useState(() =>
     Object.fromEntries(pricingTiers.map((tier) => [tier.id, false]))
   );
-  const [loadingPlan, setLoadingPlan] = useState(null);
-
   const togglePlan = (id) => {
     setExpandedPlans((prev) => ({ ...prev, [id]: !prev[id] }));
-  };
-
-  const handleCheckout = async (planId) => {
-    setLoadingPlan(planId);
-    try {
-      const res = await fetch("/api/create-checkout-session", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ planId }),
-      });
-      const data = await res.json();
-      if (data.url) {
-        window.location.href = data.url;
-      } else {
-        alert(data.error || "Failed to create checkout session.");
-        setLoadingPlan(null);
-      }
-    } catch (err) {
-      console.error(err);
-      alert("An error occurred. Please try again.");
-      setLoadingPlan(null);
-    }
   };
 
   return (
@@ -175,14 +152,12 @@ export default function Pricing({ compact = false, themeClass = "section--white"
                 {compact ? (
                   <>
                     <div className="price-card__actions">
-                      <button
-                        type="button"
-                        onClick={() => handleCheckout(tier.id)}
-                        disabled={loadingPlan === tier.id}
+                      <Link
+                        href="/schedule"
                         className={`btn price-card__cta btn--${tier.variant}`}
                       >
-                        {loadingPlan === tier.id ? "Processing…" : `Choose ${tier.name}`}
-                      </button>
+                        Schedule Demo
+                      </Link>
                       <button
                         type="button"
                         className={`price-card__dropdown-toggle ${isOpen ? "is-open" : ""}`}
@@ -209,14 +184,12 @@ export default function Pricing({ compact = false, themeClass = "section--white"
                     <p className="price-card__fee">One-time payment, no recurring fees</p>
                     <p className="price-card__features-heading">{tier.featuresHeading}</p>
                     <FeaturesList tier={tier} />
-                    <button
-                      type="button"
-                      onClick={() => handleCheckout(tier.id)}
-                      disabled={loadingPlan === tier.id}
+                    <Link
+                      href="/schedule"
                       className={`btn price-card__cta btn--${tier.variant}`}
                     >
-                      {loadingPlan === tier.id ? "Processing…" : `Choose ${tier.name}`}
-                    </button>
+                      Schedule Demo
+                    </Link>
                     <p className="price-card__support">{tier.supportNote}</p>
                   </>
                 )}
