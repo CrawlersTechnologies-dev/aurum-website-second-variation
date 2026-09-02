@@ -1,6 +1,5 @@
-﻿import Stripe from "stripe";
+import Stripe from "stripe";
 import { pricingTiers } from "@/lib/pricing";
-import { redirect } from "next/navigation";
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
@@ -28,7 +27,7 @@ export async function GET(request) {
   if (process.env.STRIPE_SECRET_KEY === "sk_test_dummy_key") {
     const mockSessionId = `cs_test_mock_${Date.now()}`;
     const mockUrl = `${appUrl}/thank-you?session_id=${mockSessionId}&token=${Buffer.from(mockSessionId).toString("base64url")}`;
-    redirect(mockUrl);
+    return Response.redirect(mockUrl);
   }
 
   try {
@@ -65,7 +64,7 @@ export async function GET(request) {
       customer_creation: "always",
     });
 
-    redirect(session.url);
+    return Response.redirect(session.url);
   } catch (err) {
     console.error("[api/buy] Error:", err);
     return new Response("Internal server error. Please try again.", { status: 500 });
