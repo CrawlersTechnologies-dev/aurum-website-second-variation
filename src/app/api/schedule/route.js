@@ -1,4 +1,4 @@
-﻿import nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 
 function createTransport() {
   return nodemailer.createTransport({
@@ -12,22 +12,22 @@ function createTransport() {
   });
 }
 
-export async function POST(request) {
-  try {
-    const { name, email, phone, volume } = await request.json();
-
-    if (!name || !email || !phone) {
-      return Response.json({ error: "Name, email, and phone are required." }, { status: 400 });
-    }
-
-    const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://aurum-goldea.com";
-
-    const isDev = process.env.SMTP_HOST === "smtp.example.com" || !process.env.SMTP_HOST;
-    if (isDev) {
-      console.log("[Lead Capture DEV]");
-      console.log("Name: " + name + ", Email: " + email + ", Phone: " + phone + ", Volume: " + volume);
-      return Response.json({ success: true });
-    }
+  export async function POST(request) {
+    try {
+      const { name, email, phone, experience } = await request.json();
+  
+      if (!name || !email || !phone) {
+        return Response.json({ error: "Name, email, and phone are required." }, { status: 400 });
+      }
+  
+      const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://aurum-goldea.com";
+  
+      const isDev = process.env.SMTP_HOST === "smtp.example.com" || !process.env.SMTP_HOST;
+      if (isDev) {
+        console.log("[Lead Capture DEV]");
+        console.log("Name: " + name + ", Email: " + email + ", Phone: " + phone + ", Experience: " + experience);
+        return Response.json({ success: true });
+      }
 
     const htmlContent = `
 <!DOCTYPE html>
@@ -76,8 +76,8 @@ export async function POST(request) {
           <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;">${phone}</td>
         </tr>
         <tr>
-          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Trading Volume</td>
-          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;">${volume || 'Not provided'}</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #6b7280;">Trading Experience</td>
+          <td style="padding: 14px 0; border-bottom: 1px solid #f3f4f6; color: #111827; font-weight: 600;">${experience || 'Not provided'}</td>
         </tr>
       </table>
       
@@ -101,7 +101,7 @@ export async function POST(request) {
       to: process.env.EMAIL_TO,
       subject: "New Demo Request: " + name,
       html: htmlContent,
-      text: "New demo request from " + name + " (" + email + "): Phone: " + phone + ", Volume: " + volume,
+      text: "New demo request from " + name + " (" + email + "): Phone: " + phone + ", Experience: " + experience,
       replyTo: email,
     });
 

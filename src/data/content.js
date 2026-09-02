@@ -47,13 +47,13 @@ export const heroCarouselSlides = [
 export const whoThisIsFor = {
   eyebrow: "Who This Is For",
   title: "Not a beginner's tool.",
-  body: "AURUM is built for traders who already understand technical or fundamental analysis and have a defined risk approach. It automates execution it does not teach trading from scratch. If you don't yet have a working understanding of market analysis and risk management, this isn't the right starting point."
+  body: "AURUM is built for traders who already understand technical or fundamental analysis and have a defined risk approach. It automates execution,it does not teach trading from scratch. If you don't yet have a working understanding of market analysis and risk management, this isn't the right starting point."
 };
 
 export const actualProblem = {
   eyebrow: "Built on 3 Core Principles",
   title: "Built on 3 Core Principles",
-  intro: "AURUM is designed to solve what manual trading can't  helping you trade with discipline, precision, and confidence.",
+  intro: "AURUM is designed to solve what manual trading can't. Helping you trade with discipline, precision, and confidence.",
   footer: "Three Principles. One Goal Consistent Growth.",
   points: [
     {

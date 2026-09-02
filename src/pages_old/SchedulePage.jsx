@@ -7,7 +7,7 @@ import "./ContactPage.css"; // Reuse contact form styles
 
 export default function SchedulePage() {
   const router = useRouter();
-  const [form, setForm] = useState({ name: "", email: "", phone: "", volume: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", experience: "" });
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
 
@@ -64,13 +64,13 @@ export default function SchedulePage() {
                 <input type="tel" name="phone" required value={form.phone} onChange={handleChange} placeholder="+1 234 567 8900" />
               </label>
               <label>
-                Current Trading Volume (Optional)
-                <select name="volume" value={form.volume} onChange={handleChange} style={{ width: '100%', padding: '16px', background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '12px', color: 'var(--white)', fontSize: '0.95rem' }}>
-                  <option value="" style={{color: '#000'}}>Select Volume</option>
-                  <option value="Beginner / Just starting out" style={{color: '#000'}}>Beginner / Just starting out</option>
-                  <option value=",000 - ,000" style={{color: '#000'}}>,000 - ,000</option>
-                  <option value=",000 - ,000" style={{color: '#000'}}>,000 - ,000</option>
-                  <option value=",000+" style={{color: '#000'}}>,000+</option>
+                How many years of trading experience you have (Optional)
+                <select name="experience" value={form.experience} onChange={handleChange} style={{ width: '100%', padding: '16px', background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '12px', color: 'var(--white)', fontSize: '0.95rem' }}>
+                  <option value="" style={{color: '#000'}}>Select Experience</option>
+                  <option value="Less than 1 year" style={{color: '#000'}}>Less than 1 year</option>
+                  <option value="1-3 years" style={{color: '#000'}}>1-3 years</option>
+                  <option value="3-5 years" style={{color: '#000'}}>3-5 years</option>
+                  <option value="5+ years" style={{color: '#000'}}>5+ years</option>
                 </select>
               </label>
             </div>
