@@ -194,10 +194,10 @@ export default function SetupGuidePage() {
                 ))}
               </div>
               <div className="setup-step-row__media">
-                <SetupVideoDisplay
-                  label="WATCH TUTORIAL: STEPS 1 – 3 (REGISTRATION & VPS)"
-                  src="https://rc76f8rhnosfcnjb.public.blob.vercel-storage.com/Aurum%20Website%20Part%201%20Final%20.mp4"
-                  poster="/images/setup-part-1.png"
+                  <SetupVideoDisplay
+                    label="WATCH TUTORIAL: STEPS 1 - 3 (REGISTRATION & VPS)"
+                    src="https://buy.aurum-goldea.com/videos/tutorials/tutorial-1.mp4"
+                    poster="/images/setup-part-1.png"
                   isIframe={false}
                 />
               </div>
@@ -217,14 +217,14 @@ export default function SetupGuidePage() {
                   </div>
                 ))}
               </div>
-                <div className="setup-step-row__media">
-                  <SetupVideoDisplay
-                    label="WATCH TUTORIAL: STEPS 4 – 6 (MT5 & EA INSTALLATION)"
-                    src="https://rc76f8rhnosfcnjb.public.blob.vercel-storage.com/Aurum%20Website%20Part%202%20final%20.mp4"
-                    poster="/images/setup-part-2.png"
-                    isIframe={false}
-                  />
-                </div>
+                  <div className="setup-step-row__media">
+                    <SetupVideoDisplay
+                      label="WATCH TUTORIAL: STEPS 4 - 6 (MT5 & EA INSTALLATION)"
+                      src="https://buy.aurum-goldea.com/videos/tutorials/tutorial-2.mp4"
+                      poster="/images/setup-part-2.png"
+                      isIframe={false}
+                    />
+                  </div>
             </div>
           </div>
         </div>
