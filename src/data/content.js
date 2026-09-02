@@ -47,7 +47,7 @@ export const heroCarouselSlides = [
 export const whoThisIsFor = {
   eyebrow: "Who This Is For",
   title: "Not a beginner's tool.",
-  body: "AURUM is built for traders who already understand technical or fundamental analysis and have a defined risk approach. It automates execution,it does not teach trading from scratch. If you don't yet have a working understanding of market analysis and risk management, this isn't the right starting point."
+  body: "AURUM is built for traders who already understand technical or fundamental analysis and have a defined risk approach. It automates execution, it does not teach trading from scratch. If you don't yet have a working understanding of market analysis and risk management, this isn't the right starting point."
 };
 
 export const actualProblem = {
