@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PageHero from "./PageHero";
 import { useRouter } from "next/navigation";
 import "./shared-page.css";
@@ -10,6 +10,26 @@ export default function SchedulePage() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", experience: "" });
   const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    async function fetchCountryCode() {
+      try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+        if (data && data.country_calling_code) {
+          setForm((f) => {
+            if (!f.phone) {
+              return { ...f, phone: data.country_calling_code + " " };
+            }
+            return f;
+          });
+        }
+      } catch (err) {
+        // Silently fail if blocked by adblocker or network error
+      }
+    }
+    fetchCountryCode();
+  }, []);
 
   function handleChange(e) {
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));

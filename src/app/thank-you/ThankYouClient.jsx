@@ -1,6 +1,6 @@
-﻿"use client";
+"use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import "./ThankYouPage.css";
@@ -25,6 +25,26 @@ function ThankYouContent() {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+
+  useEffect(() => {
+    async function fetchCountryCode() {
+      try {
+        const res = await fetch("https://ipapi.co/json/");
+        const data = await res.json();
+        if (data && data.country_calling_code) {
+          setForm((f) => {
+            if (!f.phone) {
+              return { ...f, phone: data.country_calling_code + " " };
+            }
+            return f;
+          });
+        }
+      } catch (err) {
+        // Silently fail if blocked by adblocker or network error
+      }
+    }
+    fetchCountryCode();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
