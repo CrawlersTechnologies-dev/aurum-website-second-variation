@@ -9,7 +9,7 @@ import "./shared-page.css";
 import "./ContactPage.css";
 
 const channels = [
-  { label: "Email support", value: "info@aurum-goldea.com", href: "mailto:info@aurum-goldea.com", icon: "link" },
+  { label: "Email support", value: "support@aurum-goldea.com", href: "mailto:support@aurum-goldea.com", icon: "link" },
   { label: "Response time", value: "Same day or next business day", href: null, icon: "clock" },
   { label: "Support hours", value: "Mon\u2013Sat \u00b7 10am\u20136pm GST", href: null, icon: "shield" }
 ];

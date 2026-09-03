@@ -1,6 +1,6 @@
 "use client";
 
-const EMAIL = "info@aurum-goldea.com";
+const EMAIL = "support@aurum-goldea.com";
 const SUBJECT = "AURUM Inquiry";
 
 function buildMailto() {

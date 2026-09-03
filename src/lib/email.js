@@ -135,7 +135,7 @@ export async function sendPaymentSuccessEmail({
       <p style="font-size:0.93rem;">
         Our team will begin processing your order once your requirements are submitted. 
         If you have any questions, reply to this email or contact us at 
-        <a href="mailto:info@aurum-goldea.com" style="color:#19d05f;font-weight:500;">info@aurum-goldea.com</a>.
+        <a href="mailto:support@aurum-goldea.com" style="color:#19d05f;font-weight:500;">support@aurum-goldea.com</a>.
       </p>
     </div>
     <div class="footer">
@@ -160,7 +160,7 @@ ${formLink}
 
 This link is secure and connected to your payment. You can complete it at your convenience.
 
-Questions? Email us: info@aurum-goldea.com
+Questions? Email us: support@aurum-goldea.com
 `;
 
   return sendMail({
@@ -253,7 +253,7 @@ export async function sendRequirementConfirmationEmail({ customerEmail, customer
       <p>Thank you for submitting your requirements. We have successfully received your information.</p>
       <p>Our team will review the details and get back to you as soon as possible. In most cases, you can expect a response within the same business day.</p>
       <p>If you have any questions in the meantime, feel free to reply to this email or contact us at 
-        <a href="mailto:info@aurum-goldea.com" style="color:#19d05f;font-weight:500;">info@aurum-goldea.com</a>.
+        <a href="mailto:support@aurum-goldea.com" style="color:#19d05f;font-weight:500;">support@aurum-goldea.com</a>.
       </p>
       <p>Thank you for choosing AURUM GOLD EA. We look forward to assisting you.</p>
       <p style="margin-top:24px;">Best regards,<br/><br/><strong style="color:#ffffff;">Team AURUM GOLD EA</strong></p>
@@ -269,7 +269,7 @@ export async function sendRequirementConfirmationEmail({ customerEmail, customer
     to: customerEmail,
     subject: "✅ Requirements Received – AURUM EA",
     html,
-    text: `Hi ${customerName || "Valued Customer"},\n\nThank you for submitting your requirements. We have successfully received your information.\n\nOur team will review the details and get back to you as soon as possible. In most cases, you can expect a response within the same business day.\n\nIf you have any questions in the meantime, feel free to reply to this email or contact us at info@aurum-goldea.com.\n\nThank you for choosing AURUM GOLD EA. We look forward to assisting you.\n\nBest regards,\n\nTeam AURUM GOLD EA`,
+    text: `Hi ${customerName || "Valued Customer"},\n\nThank you for submitting your requirements. We have successfully received your information.\n\nOur team will review the details and get back to you as soon as possible. In most cases, you can expect a response within the same business day.\n\nIf you have any questions in the meantime, feel free to reply to this email or contact us at support@aurum-goldea.com.\n\nThank you for choosing AURUM GOLD EA. We look forward to assisting you.\n\nBest regards,\n\nTeam AURUM GOLD EA`,
   });
 }
 
