@@ -41,7 +41,7 @@ export default function FounderSection() {
             <div className="founder__photo">
               <img
                 src={founderProfile.image}
-                alt="Nikkhil Malhotra Co-Founder AURUM EA Moneytize Trading Academy Dubai"
+                alt="Nikkhil Malhotra Co-Founder AURUM GOLD EA Moneytize Trading Academy Dubai"
               />
             </div>
             <div className="founder__stats">

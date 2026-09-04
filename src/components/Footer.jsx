@@ -12,9 +12,9 @@ export default function Footer() {
       <div className="container footer__top reveal">
         <div className="footer__brand">
           <Link href="/" className="footer__logo">
-            <Image src="/images/logo-navbar.png" width={48} height={48} alt="AURUM EA Gold Expert Advisor logo" className="footer__logo-mark" />
+            <Image src="/images/logo-navbar.png" width={48} height={48} alt="AURUM GOLD EA Gold Expert Advisor logo" className="footer__logo-mark" />
             <span className="footer__logo-text">
-              AURUM<span className="footer__logo-thin">GOLD</span>
+              AURUM<span className="footer__logo-thin">GOLD EA</span>
             </span>
           </Link>
         </div>
@@ -40,7 +40,7 @@ export default function Footer() {
       <div className="footer__strip">
         <div className="container footer__strip-row">
           <div className="footer__legal">
-            <span>© {new Date().getFullYear()} AURUM EA</span>
+            <span>© {new Date().getFullYear()} AURUM GOLD EA</span>
             <span className="footer__legal-sep" aria-hidden="true" />
             <a href="https://aurum-goldea.com" className="footer__legal-link">aurum-goldea.com</a>
             <span className="footer__legal-sep" aria-hidden="true" />

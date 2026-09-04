@@ -78,7 +78,7 @@ export async function sendPaymentSuccessEmail({
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Payment Confirmed – AURUM EA</title>
+  <title>Payment Confirmed – AURUM GOLD EA</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
     body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #050814; margin: 0; padding: 0; }
@@ -107,14 +107,14 @@ export async function sendPaymentSuccessEmail({
   <div class="wrapper">
     <div class="header">
       <a href="${appUrl}" class="header-logo">
-        <img src="${appUrl}/images/logo-navbar.png" alt="AURUM EA Logo" />
-        <div class="header-logo-text">AURUM<span>GOLD</span></div>
+        <img src="${appUrl}/images/logo-navbar.png" alt="AURUM GOLD EA Logo" />
+        <div class="header-logo-text">AURUM<span>GOLD EA</span></div>
       </a>
       <h1>Payment Confirmed</h1>
     </div>
     <div class="body">
       <p>Hi <strong style="color: #ffffff;">${customerName || "Valued Customer"}</strong>,</p>
-      <div class="success-badge">✅ Your payment has been successfully completed. Thank you for choosing AURUM EA!</div>
+      <div class="success-badge">✅ Your payment has been successfully completed. Thank you for choosing AURUM GOLD EA!</div>
       <p style="text-align:center;">Here is a summary of your purchase:</p>
       <table class="details-table">
         <tr><td style="color:#9ca3af;width:45%;">Plan</td><td style="font-weight:500;text-align:right;color:#ffffff;">${planName} Plan</td></tr>
@@ -139,7 +139,7 @@ export async function sendPaymentSuccessEmail({
       </p>
     </div>
     <div class="footer">
-      © ${new Date().getFullYear()} AURUM EA · Moneytize Trading Academy · <a href="${appUrl}">aurum-goldea.com</a>
+      © ${new Date().getFullYear()} AURUM GOLD EA &middot; <a href="${appUrl}">aurum-goldea.com</a>
     </div>
   </div>
 </body>
@@ -147,7 +147,7 @@ export async function sendPaymentSuccessEmail({
 
   const text = `Hi ${customerName || "Valued Customer"},
 
-Your payment has been successfully completed. Thank you for choosing AURUM EA!
+Your payment has been successfully completed. Thank you for choosing AURUM GOLD EA!
 
 Plan: ${planName} Plan
 Base Price: ${currencySymbol}${basePrice}
@@ -165,7 +165,7 @@ Questions? Email us: support@aurum-goldea.com
 
   return sendMail({
     to: customerEmail,
-    subject: `✅ Payment Confirmed – AURUM EA ${planName} Plan`,
+    subject: `✅ Payment Confirmed – AURUM GOLD EA ${planName} Plan`,
     html,
     text,
   });
@@ -190,7 +190,7 @@ export async function sendInternalPaymentNotification({
   zohoError,
 }) {
   const html = `
-<h2>🆕 New Payment Received – AURUM EA</h2>
+<h2>🆕 New Payment Received – AURUM GOLD EA</h2>
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;font-family:sans-serif;">
   <tr><td><strong>Customer Name</strong></td><td>${customerName}</td></tr>
   <tr><td><strong>Customer Email</strong></td><td>${customerEmail}</td></tr>
@@ -223,7 +223,7 @@ export async function sendRequirementConfirmationEmail({ customerEmail, customer
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Requirements Received – AURUM EA</title>
+  <title>Requirements Received – AURUM GOLD EA</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
     body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #050814; margin: 0; padding: 0; }
@@ -243,8 +243,8 @@ export async function sendRequirementConfirmationEmail({ customerEmail, customer
   <div class="wrapper">
     <div class="header">
       <a href="${appUrl}" class="header-logo">
-        <img src="${appUrl}/images/logo-navbar.png" alt="AURUM EA Logo" />
-        <div class="header-logo-text">AURUM<span>GOLD</span></div>
+        <img src="${appUrl}/images/logo-navbar.png" alt="AURUM GOLD EA Logo" />
+        <div class="header-logo-text">AURUM<span>GOLD EA</span></div>
       </a>
       <h1>Requirements Received</h1>
     </div>
@@ -259,7 +259,7 @@ export async function sendRequirementConfirmationEmail({ customerEmail, customer
       <p style="margin-top:24px;">Best regards,<br/><br/><strong style="color:#ffffff;">Team AURUM GOLD EA</strong></p>
     </div>
     <div class="footer">
-      © ${new Date().getFullYear()} AURUM EA · Moneytize Trading Academy · <a href="${appUrl}">aurum-goldea.com</a>
+      © ${new Date().getFullYear()} AURUM GOLD EA &middot; <a href="${appUrl}">aurum-goldea.com</a>
     </div>
   </div>
 </body>
@@ -267,7 +267,7 @@ export async function sendRequirementConfirmationEmail({ customerEmail, customer
 
   return sendMail({
     to: customerEmail,
-    subject: "✅ Requirements Received – AURUM EA",
+    subject: "✅ Requirements Received – AURUM GOLD EA",
     html,
     text: `Hi ${customerName || "Valued Customer"},\n\nThank you for submitting your requirements. We have successfully received your information.\n\nOur team will review the details and get back to you as soon as possible. In most cases, you can expect a response within the same business day.\n\nIf you have any questions in the meantime, feel free to reply to this email or contact us at support@aurum-goldea.com.\n\nThank you for choosing AURUM GOLD EA. We look forward to assisting you.\n\nBest regards,\n\nTeam AURUM GOLD EA`,
   });
@@ -282,7 +282,7 @@ export async function sendInternalRequirementNotification({ customerName, custom
     .join("");
 
   const html = `
-<h2>📋 New Requirements Submitted – AURUM EA</h2>
+<h2>📋 New Requirements Submitted – AURUM GOLD EA</h2>
 <p><strong>Customer:</strong> ${customerName} (${customerEmail})</p>
 <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse;width:100%;font-family:sans-serif;">
   ${rows}

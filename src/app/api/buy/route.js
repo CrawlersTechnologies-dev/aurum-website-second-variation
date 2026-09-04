@@ -38,7 +38,7 @@ export async function GET(request) {
           price_data: {
             currency: "usd",
             product_data: {
-              name: `AURUM EA - ${plan.name} Plan`,
+              name: `AURUM GOLD EA - ${plan.name} Plan`,
               description: "Lifetime licence - No recurring fees",
               metadata: {
                 planId,

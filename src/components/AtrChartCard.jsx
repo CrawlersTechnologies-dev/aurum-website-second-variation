@@ -19,7 +19,7 @@ export default function AtrChartCard() {
         <img
           className="atr-visual-card__img"
           src="/images/atr-grid-3d-chart.png"
-          alt="AURUM EA ATR grid strategy Gold trading simulation"
+          alt="AURUM GOLD EA ATR grid strategy Gold trading simulation"
         />
       </div>
     </div>

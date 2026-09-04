@@ -1,5 +1,5 @@
 ﻿export const metadata = {
-  title: "Demo Scheduled | AURUM EA",
+  title: "Demo Scheduled | AURUM GOLD EA",
 };
 
 import ScheduleSuccessPage from "../../pages_old/ScheduleSuccessPage";

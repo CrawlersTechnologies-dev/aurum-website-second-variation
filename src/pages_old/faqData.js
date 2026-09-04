@@ -4,8 +4,8 @@ export const faqCategories = [
     title: "Getting Started",
     items: [
       {
-        q: "What exactly is AURUM EA?",
-        a: "AURUM EA is an Expert Advisor a piece of software that plugs directly into MetaTrader 4 or MetaTrader 5 and trades on your behalf, automatically. It uses an ATR-based (Average True Range) intelligent grid strategy, primarily optimised for Gold (XAUUSD). Once installed and configured, it analyses the market, opens positions, manages risk, and closes trades without you needing to watch a chart or make decisions. It runs 24 hours a day, 7 days a week — including while you sleep."
+        q: "What exactly is AURUM GOLD EA?",
+        a: "AURUM GOLD EA is an Expert Advisor a piece of software that plugs directly into MetaTrader 4 or MetaTrader 5 and trades on your behalf, automatically. It uses an ATR-based (Average True Range) intelligent grid strategy, primarily optimised for Gold (XAUUSD). Once installed and configured, it analyses the market, opens positions, manages risk, and closes trades without you needing to watch a chart or make decisions. It runs 24 hours a day, 7 days a week — including while you sleep."
       },
       {
         q: "Do I need any trading experience to use AURUM?",
@@ -84,7 +84,7 @@ export const faqCategories = [
       {
         q: "Why is changing the Magic Number important when loading a new set file?",
         a: [
-          "The Magic Number is a unique identifier that allows AURUM EA to recognize and manage its own trades.",
+          "The Magic Number is a unique identifier that allows AURUM GOLD EA to recognize and manage its own trades.",
           "If you already have open trades on your account and load a previously saved set file without changing the Magic Number, the EA may mistakenly identify and manage existing trades, leading to unexpected behavior.",
           "Before loading a new set file: check whether there are any existing open trades, assign a unique Magic Number to the new chart, and ensure that each EA instance running on your account has a different Magic Number."
         ]
@@ -92,23 +92,23 @@ export const faqCategories = [
       {
         q: "How can I identify the reason behind an error in MT5?",
         a: [
-          "If you encounter an issue while using AURUM EA, the first place to check is the Journal tab in the MT5 terminal.",
+          "If you encounter an issue while using AURUM GOLD EA, the first place to check is the Journal tab in the MT5 terminal.",
           "The Journal displays detailed error messages that can help identify the root cause of the problem, such as technical errors, broker-related issues, internet or VPS connectivity problems, and trading permission or account-related issues.",
           "Reviewing the Journal before contacting support helps identify the issue more quickly and enables faster troubleshooting."
         ]
       },
       {
-        q: "Why did AURUM EA stop trading on my VPS?",
+        q: "Why did AURUM GOLD EA stop trading on my VPS?",
         a: [
           "A common reason is that the MT5 terminal was accidentally closed. When using a VPS, the MT5 platform must remain running at all times for the EA to function continuously.",
-          "Do not close or exit the MT5 terminal. Simply minimize the platform if you are finished using it. Closing MT5 will stop AURUM EA from monitoring the market and executing trades."
+          "Do not close or exit the MT5 terminal. Simply minimize the platform if you are finished using it. Closing MT5 will stop AURUM GOLD EA from monitoring the market and executing trades."
         ]
       },
       {
         q: "Which input parameters or strategy should I use? Can your team provide Buy/Sell signals?",
         a: [
           "The optimal input parameters depend on several factors, including your account balance, your risk appetite, and your trading objectives. There is no single parameter set that guarantees profits for every account.",
-          "AURUM EA does not provide Buy or Sell signals. Our technical team does not recommend specific trading directions. Profit screenshots shared within the community are for informational purposes only and should not be considered trading advice.",
+          "AURUM GOLD EA does not provide Buy or Sell signals. Our technical team does not recommend specific trading directions. Profit screenshots shared within the community are for informational purposes only and should not be considered trading advice.",
           "Successful trading requires appropriate risk management and a proper understanding of the EA's settings."
         ]
       },
@@ -116,21 +116,21 @@ export const faqCategories = [
         q: "How can I confirm that I am logged into my MT5 trading account?",
         a: [
           "If your charts are not loading correctly or you suspect you are not logged in, you can verify your account status easily.",
-          "Open the Trade tab at the bottom of the MT5 terminal and check whether your account balance is displayed. If your balance is visible, your trading account is successfully logged in. If no balance appears, you may need to log in again before using AURUM EA."
+          "Open the Trade tab at the bottom of the MT5 terminal and check whether your account balance is displayed. If your balance is visible, your trading account is successfully logged in. If no balance appears, you may need to log in again before using AURUM GOLD EA."
         ]
       },
       {
-        q: "Why isn't AURUM EA taking trades after I attach it to a chart?",
+        q: "Why isn't AURUM GOLD EA taking trades after I attach it to a chart?",
         a: [
-          "Some brokers provide dummy or inactive charts that cannot execute live trades. If AURUM EA is attached to one of these charts, it will not place any trades.",
-          "Before completing the setup, ensure you have selected a real, tradable chart. If you're unsure, place a small manual trade to verify that the chart is active. If the manual trade executes successfully, you can safely attach AURUM EA to that chart.",
+          "Some brokers provide dummy or inactive charts that cannot execute live trades. If AURUM GOLD EA is attached to one of these charts, it will not place any trades.",
+          "Before completing the setup, ensure you have selected a real, tradable chart. If you're unsure, place a small manual trade to verify that the chart is active. If the manual trade executes successfully, you can safely attach AURUM GOLD EA to that chart.",
           "Using a valid trading chart ensures the EA can monitor the market and execute trades as intended."
         ]
       },
       {
-        q: "How can I stop AURUM EA on only one chart without affecting the others?",
+        q: "How can I stop AURUM GOLD EA on only one chart without affecting the others?",
         a: [
-          "If you are running AURUM EA on multiple charts and want to stop it on only one specific chart, you can disable algorithmic trading for that chart without affecting the EA on the remaining charts.",
+          "If you are running AURUM GOLD EA on multiple charts and want to stop it on only one specific chart, you can disable algorithmic trading for that chart without affecting the EA on the remaining charts.",
           "Select the chart on which you want to stop the EA. Right-click on the chart and open the Expert Advisor Properties (or press F7). Go to the Common tab, disable Allow Algo Trading (or Allow Algorithmic Trading, depending on your MT5 version), and click OK to save the changes.",
           "The EA will stop operating only on the selected chart, while it will continue running normally on all other charts where algorithmic trading remains enabled."
         ]
@@ -138,41 +138,41 @@ export const faqCategories = [
       {
         q: "Why is the Algo Trading button important, and how do I check if it is enabled?",
         a: [
-          "For AURUM EA to execute trades, the Algo Trading button in the MT5 terminal must be turned ON. If this button is disabled, the EA will remain attached to the chart but will not place or manage any trades.",
-          "Open the chart where AURUM EA is attached, look at the top toolbar of the MT5 terminal, and verify that the Algo Trading button is enabled (ON). If it is turned off, click it once to enable it.",
+          "For AURUM GOLD EA to execute trades, the Algo Trading button in the MT5 terminal must be turned ON. If this button is disabled, the EA will remain attached to the chart but will not place or manage any trades.",
+          "Open the chart where AURUM GOLD EA is attached, look at the top toolbar of the MT5 terminal, and verify that the Algo Trading button is enabled (ON). If it is turned off, click it once to enable it.",
           "Always ensure the Algo Trading button is enabled whenever the EA is not taking trades. This is one of the first checks you should perform before troubleshooting any other issues."
         ]
       },
       {
-        q: "Where can I find the AURUM EA (.EX5/.EX4) file, and how do I add it to MT5?",
+        q: "Where can I find the AURUM GOLD EA (.EX5/.EX4) file, and how do I add it to MT5?",
         a: [
-          "After purchasing AURUM EA, the EA file is sent to your registered email address. You can download it anytime from your email.",
-          "Download the AURUM EA file from your email. Open your VPS or MT5 terminal, click File → Open Data Folder, open the MQL5 (or MQL4, depending on your platform) folder, then open the Experts folder and paste the downloaded EA file into this folder.",
-          "Return to the MT5 terminal. In the Navigator panel, right-click on Expert Advisors and click Refresh. You will now see AURUM EA listed under Expert Advisors. Drag and drop the EA onto your desired chart to complete the setup.",
+          "After purchasing AURUM GOLD EA, the EA file is sent to your registered email address. You can download it anytime from your email.",
+          "Download the AURUM GOLD EA file from your email. Open your VPS or MT5 terminal, click File → Open Data Folder, open the MQL5 (or MQL4, depending on your platform) folder, then open the Experts folder and paste the downloaded EA file into this folder.",
+          "Return to the MT5 terminal. In the Navigator panel, right-click on Expert Advisors and click Refresh. You will now see AURUM GOLD EA listed under Expert Advisors. Drag and drop the EA onto your desired chart to complete the setup.",
           "If the EA does not appear after refreshing, verify that the file has been copied into the correct Experts folder and restart the MT5 terminal if necessary."
         ]
       },
       {
-        q: "What are the Upper Limit and Lower Limit parameters in AURUM EA?",
+        q: "What are the Upper Limit and Lower Limit parameters in AURUM GOLD EA?",
         a: [
-          "The Upper Limit and Lower Limit parameters define the price range within which AURUM EA is allowed to open new grid orders.",
-          "Since AURUM EA operates using a grid trading strategy, these limits help control where the EA can initiate additional positions. If the market price moves above the Upper Limit, the EA will stop placing new grid orders. If the market price moves below the Lower Limit, the EA will also stop placing new grid orders.",
+          "The Upper Limit and Lower Limit parameters define the price range within which AURUM GOLD EA is allowed to open new grid orders.",
+          "Since AURUM GOLD EA operates using a grid trading strategy, these limits help control where the EA can initiate additional positions. If the market price moves above the Upper Limit, the EA will stop placing new grid orders. If the market price moves below the Lower Limit, the EA will also stop placing new grid orders.",
           "However, any trades that are already open will continue to be managed by the EA according to its trading logic. This means the EA will still monitor and manage existing positions, but it will not open any new grid trades outside the specified price range.",
           "These parameters provide an additional layer of control over where the EA is permitted to expand its grid while ensuring that existing positions continue to be managed automatically."
         ]
       },
       {
-        q: "What does the Stop Loss parameter do in AURUM EA?",
+        q: "What does the Stop Loss parameter do in AURUM GOLD EA?",
         a: [
           "The Stop Loss parameter allows you to define the maximum loss you are willing to accept for a running set of trades.",
-          "When you set a predefined Stop Loss value, AURUM EA continuously monitors the combined drawdown of the active positions. If the drawdown reaches the specified Stop Loss limit, the EA will close (square off) all open positions associated with that trading cycle.",
+          "When you set a predefined Stop Loss value, AURUM GOLD EA continuously monitors the combined drawdown of the active positions. If the drawdown reaches the specified Stop Loss limit, the EA will close (square off) all open positions associated with that trading cycle.",
           "This feature helps limit potential losses by automatically exiting all active trades once the predefined risk threshold is reached."
         ]
       },
       {
         q: "What does the \"Enable First Buy/Sell Trade as Pending Order\" parameter do?",
         a: [
-          "The Enable First Buy/Sell Trade as Pending Order parameter determines how AURUM EA places the first trade of a trading cycle.",
+          "The Enable First Buy/Sell Trade as Pending Order parameter determines how AURUM GOLD EA places the first trade of a trading cycle.",
           "If set to True: The EA will not place the first trade as a market order. Instead, it will place a pending order at the price level you have configured. The EA will wait until the market reaches that price. Once the pending order is triggered, the EA will continue executing the remaining grid trades according to its trading logic.",
           "If set to False: The EA will place the first trade immediately as a market order, provided all other trading conditions are met."
         ]
@@ -180,7 +180,7 @@ export const faqCategories = [
       {
         q: "How do the ATR Timeframe settings for Grid Distance and Take Profit Distance work?",
         a: [
-          "The ATR Timeframe determines the timeframe AURUM EA uses to calculate the Average True Range (ATR) for setting the Grid Distance and Take Profit Distance.",
+          "The ATR Timeframe determines the timeframe AURUM GOLD EA uses to calculate the Average True Range (ATR) for setting the Grid Distance and Take Profit Distance.",
           "If you select M15, the EA calculates the ATR based on the 15-minute timeframe. If you select H1 (1 Hour), the EA calculates the ATR using the 1-hour timeframe. The calculated ATR value is then used to determine the spacing between grid orders and the take-profit distance.",
           "In general, lower ATR timeframes (such as M5 or M15) use smaller market movements, resulting in closer grid spacing and quicker trade entries and exits. Higher ATR timeframes (such as H1 or H4) use larger average market movements, resulting in wider grid spacing and take-profit levels, which generally means trades take longer to complete.",
           "There is no single \"best\" ATR timeframe. The ideal setting depends on your trading style, market conditions, and risk preference."

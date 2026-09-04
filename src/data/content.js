@@ -18,8 +18,8 @@ export const heroCarouselSlides = [
     image: "/images/myfxbook-stats-profit-overview.png",
     title: "Verified on MyFXBook",
     thumbLabel: "Overview",
-    alt: "MyFXBook verified AURUM Gold EA Tradewize stats showing +107.67% gain and $530,678 profit on a live account",
-    titleAttr: "AURUM EA MyFXBook verified performance gain, profit, and equity overview",
+    alt: "MyFXBook verified AURUM GOLD EA Tradewize stats showing +107.67% gain and $530,678 profit on a live account",
+    titleAttr: "AURUM GOLD EA MyFXBook verified performance gain, profit, and equity overview",
     description: "Every trade AURUM places is logged and independently verified no cherry-picked screenshots, just the real track record.",
     cta: { label: "View Verified Report", href: "/results" }
   },
@@ -27,8 +27,8 @@ export const heroCarouselSlides = [
     image: "/images/myfxbook-growth-chart.png",
     title: "100%+ Live Growth",
     thumbLabel: "Growth",
-    alt: "MyFXBook growth chart for AURUM Gold EA showing over 100% equity growth from May 2025 to June 2026",
-    titleAttr: "AURUM EA MyFXBook growth and equity curve",
+    alt: "MyFXBook growth chart for AURUM GOLD EA showing over 100% equity growth from May 2025 to June 2026",
+    titleAttr: "AURUM GOLD EA MyFXBook growth and equity curve",
     description: "Closed-trade growth climbing past 100% over 13+ months of live tracking equity stays close to the curve.",
     cta: { label: "See Full Results", href: "/results" }
   },
@@ -36,8 +36,8 @@ export const heroCarouselSlides = [
     image: "/images/myfxbook-profit-chart.png",
     title: "$530k+ Verified Profit",
     thumbLabel: "Profit",
-    alt: "MyFXBook profit chart for AURUM Gold EA showing cumulative profit rising to over $530,000",
-    titleAttr: "AURUM EA MyFXBook cumulative profit chart",
+    alt: "MyFXBook profit chart for AURUM GOLD EA showing cumulative profit rising to over $530,000",
+    titleAttr: "AURUM GOLD EA MyFXBook cumulative profit chart",
     description: "Live account profit tracked from a $500,000 deposit broker-synced on MyFXBook, not a backtest curve.",
     cta: { label: "Open Live Report", href: "/results" }
   }
@@ -244,7 +244,7 @@ export const pricingTiers = [
     ],
     tagline: "For traders starting out with a single-direction, single-instrument setup.",
     period: "Buy Only or Sell Only · Gold + EUR/USD",
-    features: ["AURUM EA · MT5", "Buy Only or Sell Only mode", "Gold + EUR/USD settings", "Installation guide", "Email support"],
+    features: ["AURUM GOLD EA · MT5", "Buy Only or Sell Only mode", "Gold + EUR/USD settings", "Installation guide", "Email support"],
     benefits: [
       "Lowest-friction way to test automated execution on a live account",
       "Same core ATR-grid engine used across every plan nothing watered down",
@@ -375,7 +375,7 @@ export const faqs = [
   },
   {
     q: "What is the best Gold Expert Advisor for MT5 in 2026?",
-    a: "AURUM EA uses an ATR-based intelligent grid strategy optimised specifically for XAUUSD. It has 1.5 years of live verified performance on MyFXBook, is actively traded by the team that built it, and is supported by a KHDA-approved trading institution in Dubai."
+    a: "AURUM GOLD EA uses an ATR-based intelligent grid strategy optimised specifically for XAUUSD. It has 1.5 years of live verified performance on MyFXBook, is actively traded by the team that built it, and is supported by a KHDA-approved trading institution in Dubai."
   }
 ];
 
@@ -435,13 +435,13 @@ export const fxbookSummary = [
 export const fxbookMonthlyImages = [
   {
     image: "/images/myfxbook-monthly-gain-2025.png",
-    alt: "MyFXBook monthly gain chart for AURUM Gold EA in 2025 showing consistent returns from May to December",
+    alt: "MyFXBook monthly gain chart for AURUM GOLD EA in 2025 showing consistent returns from May to December",
     title: "2025 monthly gains",
     caption: "May–Dec 2025 monthly gain (change)"
   },
   {
     image: "/images/myfxbook-monthly-gain-2026.png",
-    alt: "MyFXBook monthly gain chart for AURUM Gold EA in 2026 showing 3.75% to 5.91% monthly returns",
+    alt: "MyFXBook monthly gain chart for AURUM GOLD EA in 2026 showing 3.75% to 5.91% monthly returns",
     title: "2026 monthly gains",
     caption: "Jan–Jun 2026 monthly gain (change)"
   }
@@ -579,7 +579,7 @@ export const testimonials = [
 export const founderProfile = {
   image: "/images/founder-nikhil-6.jfif",
   name: "Nikkhil Malhotra",
-  role: "Co-Founder & CEO, AURUM EA",
+  role: "Co-Founder & CEO, AURUM GOLD EA",
   bio: [
     { type: "text", value: "With " },
     { type: "strong", value: "12+ years" },

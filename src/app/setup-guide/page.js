@@ -5,6 +5,6 @@ export default function Page() {
 }
 
 export const metadata = {
-  title: 'AURUM EA Setup Guide | Installation Instructions',
-  description: 'Step-by-step guide to installing and configuring AURUM EA. Learn how to set up your VPS, MetaTrader 5, and risk settings for automated trading.',
+  title: 'AURUM GOLD EA Setup Guide | Installation Instructions',
+  description: 'Step-by-step guide to installing and configuring AURUM GOLD EA. Learn how to set up your VPS, MetaTrader 5, and risk settings for automated trading.',
 };

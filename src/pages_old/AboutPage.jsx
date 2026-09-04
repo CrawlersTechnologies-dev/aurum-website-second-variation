@@ -117,7 +117,7 @@ export default function AboutPage() {
               <div className="founder-card__photo-wrap">
                 <img
                   src={founderProfile.image}
-                  alt="Nikhil Malhotra Co-Founder AURUM EA Moneytize Trading Academy Dubai"
+                  alt="Nikhil Malhotra Co-Founder AURUM GOLD EA Moneytize Trading Academy Dubai"
                   className="founder-card__photo"
                 />
               </div>

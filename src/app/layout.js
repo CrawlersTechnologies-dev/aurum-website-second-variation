@@ -4,30 +4,30 @@ import Script from "next/script";
 
 export const metadata = {
   metadataBase: new URL("https://aurum-goldea.com"),
-  title: "AURUM EA - Professional Gold Trading System | MyFXBook Verified",
+  title: "AURUM GOLD EA - Professional Gold Trading System | MyFXBook Verified",
   description:
-    "AURUM Gold EA automates disciplined XAUUSD execution. Verified on MyFXBook with +107.67% gain and $530k+ tracked profit. MetaTrader 5 compatible.",
+    "AURUM GOLD EA automates disciplined XAUUSD execution. Verified on MyFXBook with +107.67% gain and $530k+ tracked profit. MetaTrader 5 compatible.",
   openGraph: {
-    title: "AURUM EA - MyFXBook Verified Gold Trading System",
+    title: "AURUM GOLD EA - MyFXBook Verified Gold Trading System",
     description:
-      "Live MyFXBook-verified AURUM Gold EA performance: +107.67% gain, 5.48% monthly return, and transparent broker-synced results.",
+      "Live MyFXBook-verified AURUM GOLD EA performance: +107.67% gain, 5.48% monthly return, and transparent broker-synced results.",
     url: "https://aurum-goldea.com",
-    siteName: "AURUM EA",
+    siteName: "AURUM GOLD EA",
     type: "website",
     images: [
       {
         url: "/images/myfxbook-stats-profit-overview.png",
         width: 2184,
         height: 840,
-        alt: "MyFXBook verified AURUM Gold EA Tradewize stats showing +107.67% gain and $530,678 profit",
+        alt: "MyFXBook verified AURUM GOLD EA Tradewize stats showing +107.67% gain and $530,678 profit",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AURUM EA - MyFXBook Verified Gold Trading System",
+    title: "AURUM GOLD EA - MyFXBook Verified Gold Trading System",
     description:
-      "Live MyFXBook-verified AURUM Gold EA performance: +107.67% gain and $530k+ tracked profit.",
+      "Live MyFXBook-verified AURUM GOLD EA performance: +107.67% gain and $530k+ tracked profit.",
     images: ["/images/myfxbook-stats-profit-overview.png"],
   },
   verification: {

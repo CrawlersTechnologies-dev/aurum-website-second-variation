@@ -63,24 +63,24 @@ export async function POST(request) {
     await transporter.sendMail({
       from: process.env.EMAIL_FROM,
       to: email,
-      subject: "We received your message – AURUM EA",
+      subject: "We received your message – AURUM GOLD EA",
       html: `
         <div style="font-family:-apple-system,sans-serif;max-width:600px;margin:40px auto;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08)">
           <div style="background:#0a1628;padding:32px 40px;text-align:center">
-            <h1 style="color:#c8a951;margin:0;font-size:1.6rem">AURUM EA</h1>
+            <h1 style="color:#c8a951;margin:0;font-size:1.6rem">AURUM GOLD EA</h1>
             <p style="color:rgba(255,255,255,0.7);margin:8px 0 0">Message Received</p>
           </div>
           <div style="padding:40px;color:#374151;line-height:1.7">
             <p>Hi <strong>${name}</strong>,</p>
             <p>Thank you for reaching out. We've received your message and our team will get back to you within the same day or next business day.</p>
             <p>If you need immediate assistance, you can reply directly to this email.</p>
-            <p>— The AURUM EA Team</p>
+            <p>— The AURUM GOLD EA Team</p>
           </div>
           <div style="background:#f4f6f9;padding:20px 40px;text-align:center;font-size:0.82rem;color:#9ca3af">
-            © ${new Date().getFullYear()} AURUM EA · aurum-goldea.com
+            © ${new Date().getFullYear()} AURUM GOLD EA · aurum-goldea.com
           </div>
         </div>`,
-      text: `Hi ${name},\n\nThank you for reaching out. We've received your message and will get back to you within the same day or next business day.\n\n— The AURUM EA Team`,
+      text: `Hi ${name},\n\nThank you for reaching out. We've received your message and will get back to you within the same day or next business day.\n\n— The AURUM GOLD EA Team`,
     });
 
     console.log(`[Contact] Email sent for ${name} <${email}>`);

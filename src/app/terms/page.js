@@ -5,6 +5,6 @@ export default function Page() {
 }
 
 export const metadata = {
-  title: 'Terms & Conditions | AURUM EA',
-  description: 'Read the terms and conditions for using AURUM EA. Important legal information regarding our automated gold trading software and services.',
+  title: 'Terms & Conditions | AURUM GOLD EA',
+  description: 'Read the terms and conditions for using AURUM GOLD EA. Important legal information regarding our automated gold trading software and services.',
 };

@@ -5,6 +5,6 @@ export default function Page() {
 }
 
 export const metadata = {
-  title: 'AURUM EA FAQ | Automated Gold Trading Questions',
-  description: 'Find answers to frequently asked questions about AURUM EA, including setup, risk management, brokers, and MyFXBook verified performance.',
+  title: 'AURUM GOLD EA FAQ | Automated Gold Trading Questions',
+  description: 'Find answers to frequently asked questions about AURUM GOLD EA, including setup, risk management, brokers, and MyFXBook verified performance.',
 };

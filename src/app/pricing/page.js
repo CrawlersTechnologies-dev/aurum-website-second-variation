@@ -5,6 +5,6 @@ export default function Page() {
 }
 
 export const metadata = {
-  title: 'AURUM EA Pricing | Lifetime Gold Trading Licenses',
-  description: 'Choose your AURUM EA lifetime license. Get full access to our MyFXBook verified automated gold trading system with VIP support and updates.',
+  title: 'AURUM GOLD EA Pricing | Lifetime Gold Trading Licenses',
+  description: 'Choose your AURUM GOLD EA lifetime license. Get full access to our MyFXBook verified automated gold trading system with VIP support and updates.',
 };

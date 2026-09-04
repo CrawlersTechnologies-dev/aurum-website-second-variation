@@ -1,5 +1,5 @@
 ﻿export const metadata = {
-  title: "Thank You | AURUM EA",
+  title: "Thank You | AURUM GOLD EA",
 };
 
 import ThankYouClient from "./ThankYouClient";

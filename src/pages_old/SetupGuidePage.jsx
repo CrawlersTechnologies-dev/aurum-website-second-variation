@@ -69,7 +69,7 @@ const IconDownload = (props) => (
 const steps = [
   {
     title: "Purchase & Register",
-    desc: "Purchase AURUM EA from the website. After payment, reply to the confirmation email with your Name, Subscribed Package, Trading Account Number, and Trading Platform (MT5). Once verified, you'll receive a second email containing your AURUM EA file."
+    desc: "Purchase AURUM GOLD EA from the website. After payment, reply to the confirmation email with your Name, Subscribed Package, Trading Account Number, and Trading Platform (MT5). Once verified, you'll receive a second email containing your AURUM GOLD EA file."
   },
   {
     title: "Set Up Your Windows VPS",
@@ -80,17 +80,17 @@ const steps = [
     desc: "On the VPS, download and install your broker's MetaTrader 5 platform. Open MT5, select your broker, choose Connect with an Existing Account, then log in using your Trading Account Number, Master Password, and Server."
   },
   {
-    title: "Install the AURUM EA File",
-    desc: "Download the AURUM EA file (.ex5) from the email received after registration. Copy it to MetaTrader 5 via File \u2192 Open Data Folder \u2192 MQL5 \u2192 Experts folder.",
+    title: "Install the AURUM GOLD EA File",
+    desc: "Download the AURUM GOLD EA file (.ex5) from the email received after registration. Copy it to MetaTrader 5 via File \u2192 Open Data Folder \u2192 MQL5 \u2192 Experts folder.",
     code: "File \u2192 Open Data Folder \u2192 MQL5 \u2192 Experts"
   },
   {
     title: "Refresh & Attach the EA",
-    desc: "In MetaTrader 5, open the Navigator panel. Right-click Expert Advisors and select Refresh. Then drag the AURUM EA onto your XAUUSD chart or right-click it and select Attach to Chart."
+    desc: "In MetaTrader 5, open the Navigator panel. Right-click Expert Advisors and select Refresh. Then drag the AURUM GOLD EA onto your XAUUSD chart or right-click it and select Attach to Chart."
   },
   {
     title: "Start Trading",
-    desc: "Confirm the EA is attached successfully. Keep your VPS running to ensure AURUM EA trades continuously, 24 hours a day, 7 days a week."
+    desc: "Confirm the EA is attached successfully. Keep your VPS running to ensure AURUM GOLD EA trades continuously, 24 hours a day, 7 days a week."
   }
 ];
 
@@ -163,7 +163,7 @@ export default function SetupGuidePage() {
     <main>
       <PageHero
         eyebrow="MT5 Setup Guide 6 Steps"
-        title="Install AURUM EA on MT5 in 6 steps."
+        title="Install AURUM GOLD EA on MT5 in 6 steps."
         lead="No coding. No complex configuration. From purchase to live automated Gold trading on MetaTrader 5 follow these 6 steps."
         badge="6 steps · No coding required · MetaTrader 5"
       />
@@ -173,7 +173,7 @@ export default function SetupGuidePage() {
           <div className="section-head section-head--center reveal">
             <p className="eyebrow">6-Step MT5 Installation Guide</p>
             <p>
-              These 6 steps cover the complete AURUM EA installation on MetaTrader 5 from purchase
+              These 6 steps cover the complete AURUM GOLD EA installation on MetaTrader 5 from purchase
               through to live automated Gold trading on XAUUSD.
             </p>
           </div>

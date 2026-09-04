@@ -16,7 +16,7 @@ const policies = {
       },
       {
         heading: "How we use your information",
-        body: "We use your information to process orders, deliver the AURUM EA, provide support, send transactional emails, and improve our services. We do not sell your personal data."
+        body: "We use your information to process orders, deliver the AURUM GOLD EA, provide support, send transactional emails, and improve our services. We do not sell your personal data."
       },
       {
         heading: "Payments",

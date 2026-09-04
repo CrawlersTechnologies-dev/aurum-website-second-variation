@@ -187,7 +187,7 @@ export async function createInvoice({
 
   const lineItems = [
     {
-      name: `AURUM EA – ${planName} Plan`,
+      name: `AURUM GOLD EA – ${planName} Plan`,
       description: "Lifetime licence · One-time payment",
       rate: basePrice,
       quantity: 1,

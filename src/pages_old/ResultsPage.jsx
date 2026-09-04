@@ -16,8 +16,8 @@ import "./ResultsPage.css";
 const MFX_SLIDES = [
   {
     image: "/images/myfxbook-growth-chart.png",
-    alt: "MyFXBook growth chart for AURUM Gold EA Tradewize showing over 100% equity growth from May 2025 to June 2026",
-    titleAttr: "AURUM EA MyFXBook growth and equity curve",
+    alt: "MyFXBook growth chart for AURUM GOLD EA Tradewize showing over 100% equity growth from May 2025 to June 2026",
+    titleAttr: "AURUM GOLD EA MyFXBook growth and equity curve",
     badge: "GROWTH",
     title: "Steady Verified Growth",
     desc: "Closed-trade growth climbing past 100% over 13+ months of live tracking with equity growth staying close to the curve.",
@@ -25,8 +25,8 @@ const MFX_SLIDES = [
   },
   {
     image: "/images/myfxbook-profit-chart.png",
-    alt: "MyFXBook profit chart for AURUM Gold EA showing cumulative profit rising to over $530,000 from May 2025 to June 2026",
-    titleAttr: "AURUM EA MyFXBook cumulative profit chart",
+    alt: "MyFXBook profit chart for AURUM GOLD EA showing cumulative profit rising to over $530,000 from May 2025 to June 2026",
+    titleAttr: "AURUM GOLD EA MyFXBook cumulative profit chart",
     badge: "PROFIT",
     title: "Real Dollar Profit",
     desc: "Live account profit climbing toward $530k+ on a $500,000 deposit independently synced from the broker, not a backtest.",
@@ -34,8 +34,8 @@ const MFX_SLIDES = [
   },
   {
     image: "/images/myfxbook-advanced-statistics.png",
-    alt: "MyFXBook advanced statistics for AURUM Gold EA showing 6,287 trades, 2.37 profit factor, and 87% longs won",
-    titleAttr: "AURUM EA MyFXBook advanced trade statistics",
+    alt: "MyFXBook advanced statistics for AURUM GOLD EA showing 6,287 trades, 2.37 profit factor, and 87% longs won",
+    titleAttr: "AURUM GOLD EA MyFXBook advanced trade statistics",
     badge: "DEEP METRICS",
     title: "Advanced Analytics",
     desc: "6,287 trades logged with a 2.37 profit factor, 87% longs won, and 82% shorts won  every metric open for inspection.",
@@ -43,8 +43,8 @@ const MFX_SLIDES = [
   },
   {
     image: "/images/myfxbook-account-stats.png",
-    alt: "MyFXBook account stats for AURUM Gold EA showing +107.67% gain, 5.48% monthly return, and 16.95% drawdown",
-    titleAttr: "AURUM EA MyFXBook account performance stats",
+    alt: "MyFXBook account stats for AURUM GOLD EA showing +107.67% gain, 5.48% monthly return, and 16.95% drawdown",
+    titleAttr: "AURUM GOLD EA MyFXBook account performance stats",
     badge: "LIVE STATS",
     title: "Full Account Snapshot",
     desc: "Gain, monthly return, drawdown, balance, and deposits the full MyFXBook stats panel, updated from live broker data.",
@@ -253,7 +253,7 @@ export default function ResultsPage() {
             <h2>MyFXBook verified. No cherry-picking.</h2>
             <p>
               We use MyFXBook the industry standard for independently verified trading results
-             to give you transparent, tamper-proof performance data from the live AURUM Gold EA Tradewize account.
+             to give you transparent, tamper-proof performance data from the live AURUM GOLD EA Tradewize account.
             </p>
           </div>
 
@@ -295,7 +295,7 @@ export default function ResultsPage() {
           </div>
 
           <p className="perf-note">
-            Figures from the live AURUM Gold EA Tradewize MyFXBook account. Individual results vary based on account
+            Figures from the live AURUM GOLD EA Tradewize MyFXBook account. Individual results vary based on account
             size, broker, and risk settings.
           </p>
         </div>

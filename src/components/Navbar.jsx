@@ -54,13 +54,13 @@ export default function Navbar() {
       <div className="container nav__row">
         <Link href="/" className="nav__logo" onClick={() => setOpen(false)}>
           <span className="nav__logo-mark-wrap">
-            <Image src="/images/logo-navbar.png" width={48} height={48} alt="AURUM EA Gold Expert Advisor logo" className="nav__logo-mark"/>
+            <Image src="/images/logo-navbar.png" width={48} height={48} alt="AURUM GOLD EA Gold Expert Advisor logo" className="nav__logo-mark"/>
           </span>
-          <span className="nav__logo-copy">
-            <span className="nav__logo-text">
-              AURUM<span className="nav__logo-thin">GOLD</span>
+            <span className="nav__logo-copy">
+              <span className="nav__logo-text">
+                AURUM<span className="nav__logo-thin">GOLD EA</span>
+              </span>
             </span>
-          </span>
         </Link>
 
         <nav className="nav__links" aria-label="Primary">

@@ -45,11 +45,11 @@ function createTransport() {
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
           <tr>
             <td style="padding-right: 12px; vertical-align: middle;">
-              <img src="${appUrl}/images/logo-navbar.png" alt="AURUM EA Logo" style="height: 36px; display: block;" />
+              <img src="${appUrl}/images/logo-navbar.png" alt="AURUM GOLD EA Logo" style="height: 36px; display: block;" />
             </td>
             <td style="vertical-align: middle;">
               <div style="font-size: 22px; font-weight: 800; letter-spacing: 0.5px;">
-                AURUM<span style="color: #19d05f; font-weight: 600; font-size: 14px; letter-spacing: 1px; margin-left: 4px;">GOLD</span>
+                AURUM<span style="color: #19d05f; font-weight: 600; font-size: 14px; letter-spacing: 1px; margin-left: 4px;">GOLD EA</span>
               </div>
             </td>
           </tr>
@@ -88,7 +88,7 @@ function createTransport() {
 
     <!-- Footer -->
     <div style="background-color: #f9fafb; padding: 20px; text-align: center; color: #9ca3af; font-size: 13px; border-top: 1px solid #f3f4f6;">
-      &copy; ${new Date().getFullYear()} AURUM EA &middot; aurum-goldea.com
+      &copy; ${new Date().getFullYear()} AURUM GOLD EA &middot; aurum-goldea.com
     </div>
   </div>
 </body>
