@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="footer__legal">
             <span>© {new Date().getFullYear()} AURUM GOLD EA</span>
             <span className="footer__legal-sep" aria-hidden="true" />
-            <a href="https://aurum-goldea.com" className="footer__legal-link">aurum-goldea.com</a>
+            <a href="https://get.aurum-goldea.com" className="footer__legal-link">aurum-goldea.com</a>
             <span className="footer__legal-sep" aria-hidden="true" />
             <span>All rights reserved</span>
           </div>
