@@ -228,7 +228,7 @@ export const pricingTiers = [
   {
     id: "starter",
     name: "Silver",
-    price: "$1",
+    price: "$1,099",
     audience: "Perfect for beginners",
     highlight: "For Single Direction Trading",
     featuresHeading: "Key Features:",
@@ -263,7 +263,7 @@ export const pricingTiers = [
   {
     id: "enterprise",
     name: "Gold",
-    price: "$2",
+    price: "$1,399",
     audience: "For professional traders",
     highlight: "Best for Bi-directional Trading",
     featuresHeading: "Everything in Silver, Plus:",
@@ -304,7 +304,7 @@ export const pricingTiers = [
   {
     id: "diamond",
     name: "Diamond",
-    price: "$3",
+    price: "$1,999",
     audience: "For professional traders",
     highlight: "Maximum Customization & Power",
     featuresHeading: "Everything in Gold, Plus:",
@@ -410,7 +410,8 @@ export const footerColumns = [
 
 export const socialLinks = [
   { label: "WhatsApp", href: "https://wa.me/971507741490", icon: "whatsapp" },
-  { label: "Instagram", href: "https://www.instagram.com/aurumgoldea", icon: "instagram" },
+  { label: "Facebook", href: "https://www.facebook.com/aurumgoldea", icon: "facebook" },
+    { label: "Instagram", href: "https://www.instagram.com/aurumgoldea", icon: "instagram" },
   { label: "Telegram", href: "https://t.me/hextechalgo", icon: "telegram" },
   { label: "YouTube", href: "https://youtube.com/@moneytizellc", icon: "youtube" }
 ];

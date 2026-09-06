@@ -4,17 +4,17 @@ export const pricingTiers = [
   {
     id: "starter",
     name: "Silver",
-    priceBase: 1,
+    priceBase: 1099,
   },
   {
     id: "enterprise", // "Gold" plan (using the old id from content.js)
     name: "Gold",
-    priceBase: 2,
+    priceBase: 1399,
   },
   {
     id: "diamond",
     name: "Diamond",
-    priceBase: 3,
+    priceBase: 1999,
   }
 ];
 
