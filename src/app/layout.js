@@ -59,6 +59,7 @@ export default function RootLayout({ children }) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1225268763097069');
             fbq('init', '1122074216937828');
             fbq('track', 'PageView');
           `}
@@ -66,13 +67,8 @@ export default function RootLayout({ children }) {
       </head>
       <body suppressHydrationWarning>
         <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1122074216937828&ev=PageView&noscript=1"
-            alt=""
-          />
+          <img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=1225268763097069&ev=PageView&noscript=1" alt="" />
+          <img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=1122074216937828&ev=PageView&noscript=1" alt="" />
         </noscript>
         <ClientLayout>{children}</ClientLayout>
       </body>
