@@ -64,6 +64,43 @@ export default function RootLayout({ children }) {
             fbq('track', 'PageView');
           `}
         </Script>
+        <Script id="optivyro-tracking" strategy="afterInteractive">
+          {`
+            (function() {
+              function _ovAppendParams(href) {
+                try {
+                  var url = new URL(href);
+                  var p = new URLSearchParams(window.location.search);
+                  var fbclid = p.get("fbclid");
+                  var fbc = document.cookie.match(/_fbc=([^;]+)/)?.[1] || p.get("fbc");
+                  var fbp = document.cookie.match(/_fbp=([^;]+)/)?.[1];
+                  if (fbclid) url.searchParams.set("fbclid", fbclid);
+                  if (fbc) url.searchParams.set("fbc", fbc);
+                  if (fbp) url.searchParams.set("fbp", fbp);
+                  return url.toString();
+                } catch(e) { return href; }
+              }
+              function _ovPatchLinks() {
+                document.querySelectorAll('a[href*="app.optivyro.com/go/t/"]').forEach(function(link) {
+                  link.addEventListener('click', function(e) {
+                    this.href = _ovAppendParams(this.href);
+                  });
+                });
+              }
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', _ovPatchLinks);
+              } else {
+                _ovPatchLinks();
+              }
+              document.addEventListener('click', function(e) {
+                var link = e.target && e.target.closest && e.target.closest('a[href*="app.optivyro.com/go/t/"]');
+                if (link) {
+                  link.href = _ovAppendParams(link.href);
+                }
+              }, true);
+            })();
+          `}
+        </Script>
       </head>
       <body suppressHydrationWarning>
         <noscript>
