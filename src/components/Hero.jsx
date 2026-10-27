@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import HeroCanvas from "./HeroCanvas";
 import HeroCarousel from "./HeroCarousel";
+import Icon from "./Icon";
 import "./Hero.css";
 
 export default function Hero() {
@@ -40,7 +41,15 @@ Designed for Gold, Forex, and traders who believe consistency matters more than 
           </p>
 
           <div className="hero__actions reveal" style={{ "--reveal-delay": "240ms" }}>
-            <a href="#pricing" className="btn btn--gold">Get Started</a>
+            <a
+              href="https://app.optivyro.com/go/t/wRg1oRSUKo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn--gold"
+            >
+              Join our channel
+              <Icon name="telegram" size={16} />
+            </a>
             
             <a href="/schedule" className="btn btn--ghost">Schedule Demo</a>
           </div>

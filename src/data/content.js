@@ -412,7 +412,7 @@ export const socialLinks = [
   { label: "WhatsApp", href: "https://wa.me/971507741490", icon: "whatsapp" },
   { label: "Facebook", href: "https://www.facebook.com/aurumgoldea", icon: "facebook" },
     { label: "Instagram", href: "https://www.instagram.com/aurumgoldea", icon: "instagram" },
-  { label: "Telegram", href: "https://t.me/hextechalgo", icon: "telegram" },
+  { label: "Telegram", href: "https://app.optivyro.com/go/t/wRg1oRSUKo", icon: "telegram" },
   { label: "YouTube", href: "https://youtube.com/@moneytizellc", icon: "youtube" }
 ];
 

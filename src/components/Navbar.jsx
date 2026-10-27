@@ -78,10 +78,15 @@ export default function Navbar() {
 
         <div className="nav__actions">
           <span className="nav__divider" aria-hidden="true" />
-          <Link href="/pricing#pricing" className="btn btn--gold nav__cta">
-            Get Started
-            <Icon name="trend" size={15} strokeWidth={2.1} />
-          </Link>
+          <a
+            href="https://app.optivyro.com/go/t/wRg1oRSUKo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn--gold nav__cta"
+          >
+            Join our channel
+            <Icon name="telegram" size={15} />
+          </a>
           <button
             className={`nav__burger ${open ? "is-open" : ""}`}
             aria-label="Toggle menu"
@@ -102,9 +107,16 @@ export default function Navbar() {
             {link.label}
           </Link>
         ))}
-        <Link href="/pricing#pricing" className="btn btn--gold" onClick={() => setOpen(false)}>
-          Get Started
-        </Link>
+        <a
+          href="https://app.optivyro.com/go/t/wRg1oRSUKo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn--gold"
+          onClick={() => setOpen(false)}
+        >
+          Join our channel
+          <Icon name="telegram" size={15} />
+        </a>
       </div>
     </header>
   );
